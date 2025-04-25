@@ -1,12 +1,11 @@
 import { v4 as uuidv4 } from 'uuid';
-import config from '../../common/config.js';
 
 export default class Price {
   constructor({
     id = uuidv4(),
     scheduleId = '',
     priceValue = 0,
-    priceCurrency = config.DEFAULT_CURRENCY
+    priceCurrency = 'USD'
   } = {}) {
     this.id = id;
     this._scheduled = scheduleId;

@@ -6,7 +6,7 @@ dotenv.config();
 const NODE_ENV = process.env.NODE_ENV || 'development';
 
 // application
-const PORT = +process.env.PORT || 4000;
+const PORT = Number(process.env.PORT) || 4000;
 
 // JWT
 const JWT_SECRET_KEY = process.env.JWT_SECRET_KEY || 'secret-key';

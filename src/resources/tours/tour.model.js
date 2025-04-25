@@ -1,5 +1,4 @@
 import { v4 as uuidv4 } from 'uuid';
-import config from '../../common/config.js';
 
 export default class Tour {
   constructor({
@@ -7,7 +6,7 @@ export default class Tour {
     title = '',
     slug = '',
     description = '',
-    isVisible = config.DEFAULT_ACTIVE_STATUS
+    isVisible = true
   } = {}) {
     this.id = id;
     this.title = title;

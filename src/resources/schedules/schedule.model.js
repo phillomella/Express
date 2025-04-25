@@ -1,11 +1,10 @@
 import { v4 as uuidv4 } from 'uuid';
-import config from '../../common/config.js';
 
 export default class Schedule {
   constructor({
     id = uuidv4(),
     tourId = '',
-    isActive = config.DEFAULT_ACTIVE_STATUS,
+    isActive = true,
     startDate = new Date(),
     endDate = new Date()
   } = {}) {
